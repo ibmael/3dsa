@@ -1,0 +1,131 @@
+<section class="blog-articles" dir="rtl">
+  <div class="container">
+    <!-- Header: search + category filters -->
+    <div class="articles-header">
+      <div class="search-wrap">
+        <i class="fa-solid fa-search search-icon"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="ابحث في المقالات..."
+          [value]="searchQuery()"
+          (input)="onSearch($any($event.target).value)"
+        />
+      </div>
+      <div class="categories-wrap">
+        @for (cat of categories(); track cat) {
+          <button
+            type="button"
+            class="category-btn"
+            [class.active]="categoryFilter() === cat"
+            (click)="setCategory(cat)"
+          >
+            {{ cat }}
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Subheader: count + view toggle -->
+    <div class="articles-subheader">
+      <span class="articles-count">عرض {{ displayCount() }} مقالات</span>
+      <div class="view-toggle">
+        <button
+          type="button"
+          class="view-btn"
+          [class.active]="viewMode() === 'list'"
+          (click)="setViewMode('list')"
+          title="قائمة"
+          aria-label="عرض القائمة"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button
+          type="button"
+          class="view-btn"
+          [class.active]="viewMode() === 'grid'"
+          (click)="setViewMode('grid')"
+          title="شبكة"
+          aria-label="عرض الشبكة"
+        >
+          <i class="fa-solid fa-grip"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cards grid: 6 per page -->
+    <div
+      class="articles-grid"
+      [class.view-list]="viewMode() === 'list'"
+    >
+      @for (post of paginatedPosts(); track post.id) {
+        <article class="article-card">
+          <a [routerLink]="'/blog'" class="article-card-link">
+            <div class="article-card-image-wrap">
+              <img [src]="post.image" [alt]="post.title" class="article-card-image" />
+              <span class="article-card-category">{{ post.category }}</span>
+            </div>
+            <div class="article-card-body">
+              <div class="article-card-meta">
+                <span class="d-flex align-items-center gap-1">
+                  <i class="fa-solid fa-clock"></i>
+                  {{ post.readTime }}
+                </span>
+                <span class="article-card-dot">·</span>
+                <span>{{ post.date | date : 'd MMMM yyyy' : undefined : 'ar' }}</span>
+              </div>
+              <h3 class="article-card-title">{{ post.title }}</h3>
+              <p class="article-card-excerpt">{{ post.excerpt }}</p>
+              <div class="article-card-author">
+                <img [src]="post.author.avatar" [alt]="post.author.name" class="author-avatar" />
+                <div class="author-details">
+                  <span class="author-name">{{ post.author.name }}</span>
+                  <span class="author-role">{{ post.author.role }}</span>
+                </div>
+                <span class="article-card-arrow">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+      }
+    </div>
+
+    <!-- Pagination -->
+    @if (totalPages() > 1) {
+      <nav class="pagination-wrap" aria-label="تنقل الصفحات">
+        <button
+          type="button"
+          class="pagination-btn"
+          [disabled]="currentPage() <= 1"
+          (click)="setPage(currentPage() - 1)"
+          aria-label="الصفحة السابقة"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="pagination-numbers">
+          @for (p of pageNumbers(); track p) {
+            <button
+              type="button"
+              class="pagination-num"
+              [class.active]="currentPage() === p"
+              (click)="setPage(p)"
+            >
+              {{ p }}
+            </button>
+          }
+        </div>
+        <button
+          type="button"
+          class="pagination-btn"
+          [disabled]="currentPage() >= totalPages()"
+          (click)="setPage(currentPage() + 1)"
+          aria-label="الصفحة التالية"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </nav>
+    }
+  </div>
+</section>
