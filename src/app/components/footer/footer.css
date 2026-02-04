@@ -1,0 +1,143 @@
+.footer {
+  background-color: #0b0b0b;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(255,140,0,0.12),
+    transparent 60%
+  );
+  color: #d0d0d0;
+  padding: 70px 60px 30px;
+  direction: ltr;
+}
+
+/* Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+/* Titles */
+.footer-title {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: #ff7a00;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+/* Text */
+.footer-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+/* Input */
+.footer-input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  outline: none;
+}
+
+/* Button */
+.footer-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #ff7a00;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background: #ff9f1c;
+  box-shadow: 0 8px 20px rgba(255,159,28,0.4);
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: #ff7a00;
+}
+
+/* Brand */
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  background: #ff7a00;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Social */
+.social {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social i {
+  width: 36px;
+  height: 36px;
+  background: #141414;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social i:hover {
+  background: #ff7a00;
+  color: #fff;
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #999;
+}
+
+.heart {
+  color: #ff7a00;
+}

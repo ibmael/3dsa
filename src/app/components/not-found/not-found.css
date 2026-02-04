@@ -1,0 +1,58 @@
+.page-404 {
+  min-height: 100vh;
+  background-color: #0b0b0b;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    radial-gradient(circle at center, rgba(255,153,0,0.15), transparent 60%);
+  background-size: 40px 40px, 40px 40px, cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.error-code {
+  font-size: 160px;
+  font-weight: 800;
+  color: #ff9f1c;
+  text-shadow:
+    0 0 20px rgba(255,159,28,0.6),
+    0 0 40px rgba(255,159,28,0.4);
+  margin-bottom: 20px;
+}
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255,159,28,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.icon-wrapper i {
+  font-size: 32px;
+  color: #ff9f1c;
+}
+
+.btn-home {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+  background: #ff9f1c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,159,28,0.4);
+}
