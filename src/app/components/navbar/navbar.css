@@ -1,7 +1,46 @@
-.bg-nav{
+.logo {
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.921);
+  font-weight: 700;
+}
+
+.logo-text-small {
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: rgba(100%, 53.7%, 1.384%, 0.8);
+  font-weight: 400;
+}
+
+.bg-nav {
   background-color: #161616;
 }
-.bg-btn{
-    background: #ff7a00;
-
+.bg-btn {
+  background: #ff7a00;
+}
+.f-style {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+.actve-link {
+  background-color: rgb(252, 109, 32);
+  border-radius: 1.25rem;
+}
+.navbar-nav {
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
 }

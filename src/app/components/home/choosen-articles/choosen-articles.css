@@ -1,0 +1,134 @@
+section.chosen-section {
+  padding: 4rem 0 3rem;
+  background-color: #050507;
+  color: #ffffff;
+  direction: rtl;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.section-subtitle {
+  color: #c3c4cc;
+  font-size: 0.95rem;
+}
+
+.main-card {
+  border-radius: 1.8rem;
+  overflow: hidden;
+  background-color: #111015;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85);
+}
+
+.card-body-wrapper {
+  padding: 2.2rem 2.5rem;
+}
+
+.main-image-wrapper {
+  position: relative;
+  min-height: 260px;
+}
+
+.main-image-wrapper img {
+  display: block;
+}
+
+.reading-badge {
+  background-color: rgba(255, 138, 0, 0.12);
+  color: #ff8a00;
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+}
+
+.featured-badge {
+  background-color: #ff8a00;
+  color: #111015;
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  font-weight: 600;
+}
+
+.post-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff8a00;
+}
+
+.post-excerpt {
+  color: #d0d0d8;
+  font-size: 0.98rem;
+}
+
+.read-link {
+  color: #ff8a00;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.read-link:hover {
+  color: #ffc266;
+}
+
+.author-info .author-name {
+  font-weight: 600;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff8a00;
+}
+
+.secondary-card {
+  background-color: #111015;
+  border-radius: 1.4rem;
+  padding: 1.3rem 1.4rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+}
+
+.secondary-image-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 180px;
+  margin: -1.3rem -1.4rem 1.3rem;
+}
+
+.secondary-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.secondary-excerpt {
+  font-size: 0.9rem;
+  color: #c3c4cc;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .card-body-wrapper {
+    padding: 1.7rem 1.5rem;
+  }
+
+  .main-image-wrapper {
+    min-height: 210px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.chosen-section {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
