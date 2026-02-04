@@ -2,17 +2,19 @@ section.chosen-section {
   padding: 4rem 0 3rem;
   background-color: #050507;
   color: #ffffff;
-  direction: rtl;
 }
 
 .section-title {
-  font-weight: 800;
-  font-size: 2.2rem;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.375rem;
 }
 
 .section-subtitle {
-  color: #c3c4cc;
-  font-size: 0.95rem;
+  color: #a1a1a1;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .main-card {
@@ -111,6 +113,32 @@ section.chosen-section {
 
 .object-fit-cover {
   object-fit: cover;
+}
+.text-status {
+  background-color: #29180b;
+  border: 1 solid #67330e;
+  padding: 10px;
+}
+.status {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #f97316;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: 15px;
+  background: #ff6900;
+  box-shadow: 0 0 0 0 #ff6900;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  100% {
+    box-shadow: 0 0 0 5px #0000;
+  }
 }
 
 @media (max-width: 991.98px) {

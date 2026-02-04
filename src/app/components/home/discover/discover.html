@@ -1,1 +1,24 @@
-<p>discover works!</p>
+<section class="discover-section">
+  <div class="container">
+    <header class="discover-header text-center">
+      <a class="discover-pill btn rounded-pill mb-3" routerLink="/blog">
+        <span class="pill-dots"></span>
+        التصنيفات
+      </a>
+      <h2 class="discover-title mb-2">استكشف حسب الموضوع</h2>
+      <p class="discover-subtitle mb-0">اعثر على محتوى مصمم حسب اهتماماتك</p>
+    </header>
+
+    <div class="discover-grid">
+      @for (cat of categories; track cat.name) {
+      <a class="discover-card" [routerLink]="['/blog']" [queryParams]="{ category: cat.name }">
+        <div class="discover-card-icon">
+          <i class="fa-solid" [class]="'fa-solid ' + getIcon(cat.name)"></i>
+        </div>
+        <h3 class="discover-card-title">{{ cat.name }}</h3>
+        <p class="discover-card-count">{{ cat.count }} مقالة</p>
+      </a>
+      }
+    </div>
+  </div>
+</section>

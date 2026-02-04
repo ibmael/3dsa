@@ -1,0 +1,125 @@
+.discover-section {
+  padding: 4rem 0;
+  background-color: #0a0a0d;
+  color: #fff;
+  direction: rtl;
+}
+
+.discover-header {
+  margin-bottom: 2.5rem;
+}
+
+.discover-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ff8a00;
+  color: #0a0a0d;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.discover-pill:hover {
+  background-color: #e67a00;
+  color: #0a0a0d;
+  transform: translateY(-1px);
+}
+
+.pill-dots {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.pill-dots::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.9;
+}
+
+.pill-dots::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.9;
+}
+
+.discover-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.discover-subtitle {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.discover-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  padding: 1.5rem;
+  background-color: #111318;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.discover-card:hover {
+  border-color: rgba(255, 138, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.discover-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 138, 0, 0.15);
+  color: #ff8a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.discover-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem 0;
+}
+
+.discover-card-count {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,1 +1,42 @@
-<p>newist-articles works!</p>
+<section class="newest-section">
+  <div class="container">
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end gap-3 mb-4"
+    >
+      <div class="text-end">
+        <div class="d-flex align-items-center justify-content-end gap-2 mb-1">
+          <span class="newest-pill rounded-pill">الأحدث</span>
+        </div>
+        <h2 class="newest-title mb-1">أحدث المقالات</h2>
+        <p class="newest-subtitle mb-0">محتوى جديد طازج من المطبعة</p>
+      </div>
+      <a class="newest-link d-flex align-items-center gap-2" routerLink="/blog">
+        عرض جميع المقالات
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </div>
+
+    <div class="row g-4">
+      @for (post of newestPosts; track post.id) {
+      <div class="col-md-6 col-lg-4">
+        <a [routerLink]="['/blog']" class="newest-card">
+          <div class="newest-card-image-wrapper">
+            <img [src]="post.image" [alt]="post.title" class="newest-card-image" />
+            <span class="newest-card-category">{{ post.category }}</span>
+          </div>
+          <div class="newest-card-meta">
+            <span class="d-flex align-items-center gap-1">
+              <i class="fa-solid fa-clock"></i>
+              {{ post.readTime }}
+            </span>
+            <span class="newest-card-dot">·</span>
+            <span>{{ post.date | date : 'd MMMM yyyy' }}</span>
+          </div>
+          <h3 class="newest-card-title">{{ post.title }}</h3>
+          <p class="newest-card-excerpt">{{ post.excerpt }}</p>
+        </a>
+      </div>
+      }
+    </div>
+  </div>
+</section>
