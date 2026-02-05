@@ -1,0 +1,22 @@
+<section class="values-section">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2 class="section-title"><span class="pipe">|</span> قيمنا <span class="pipe">|</span></h2>
+      <p class="section-subtitle">المبادئ التي توجه كل ما نقوم بإنشائه</p>
+    </div>
+
+    <div class="row g-4 justify-content-center" dir="rtl">
+      @for (item of values; track $index) {
+        <div class="col-md-3 col-sm-6">
+          <div class="value-card">
+            <div class="card-icon mb-3">
+              <i [class]="item.icon"></i>
+            </div>
+            <h3 class="card-title">{{ item.title }}</h3>
+            <p class="card-desc">{{ item.desc }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

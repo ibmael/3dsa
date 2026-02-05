@@ -1,0 +1,153 @@
+.about-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0a;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+.about-hero-caption {
+  text-align: center;
+  color: #e5e7eb;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #fff;
+  background: rgba(20, 20, 24, 0.9);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.ring-container {
+  position: relative;
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+}
+
+.ring-container .circle {
+  width: 6px;
+  height: 6px;
+  background-color: #f97316;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ringring {
+  border: 2px solid #f97316;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: about-pulsate 1.5s ease-out infinite;
+  opacity: 0;
+}
+
+.circle-inline {
+  position: static;
+  transform: none;
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  background-color: #f97316;
+  border-radius: 50%;
+}
+
+@keyframes about-pulsate {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.about-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  color: #f97316;
+}
+
+.about-hero-desc {
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .about-hero-title {
+    font-size: 1.75rem;
+  }
+  .about-hero-desc {
+    font-size: 1rem;
+  }
+}
+.about-rate {
+  padding: 16px 0 4rem;
+  background-color: #0a0a0a;
+}
+
+.about-rate-card {
+  text-align: center;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  background: rgba(30, 30, 35, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-rate-icon {
+  font-size: 1.75rem;
+  color: #f97316;
+}
+
+.about-rate-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f97316;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about-rate-label {
+  font-size: 0.9375rem;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .about-rate-card {
+    padding: 1.5rem 1rem;
+  }
+  .about-rate-number {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,74 @@
+.contact-section {
+  background: linear-gradient(135deg, #ff4e00, #ffcc00); /* Orange gradient */
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 800; /* Extra bold */
+  margin-bottom: 20px;
+}
+
+.contact-desc {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Base Button Styling */
+.btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Black Button */
+.btn-black {
+  background-color: #050505;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: #333;
+}
+
+/* Outline Button */
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  color: white;
+}
+
+.btn-outline-custom:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+/* Icon spacing for RTL */
+.me-2 {
+  margin-right: 8px;
+}

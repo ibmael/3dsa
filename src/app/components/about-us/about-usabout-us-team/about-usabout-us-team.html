@@ -1,0 +1,33 @@
+<section class="team-section">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="badge-team">فريقنا</span>
+      <h2 class="section-title mt-3">تعرف على كتابنا</h2>
+      <p class="section-subtitle">
+        فريقنا من المصورين والكتاب ذوي الخبرة شغوفون بمشاركة معرفتهم مع المجتمع.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center" dir="rtl">
+      @for (member of teamMembers; track member.id) {
+        <div class="col-md-4 col-sm-6">
+          <div class="team-card">
+            <div class="member-img-wrapper">
+              <img [src]="member.image" [alt]="member.name" class="member-img" />
+              <div class="verified-badge">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+            <h3 class="member-name">{{ member.name }}</h3>
+            <p class="member-role">{{ member.role }}</p>
+            <div class="social-icons">
+              <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fa-solid fa-x"></i></a>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
