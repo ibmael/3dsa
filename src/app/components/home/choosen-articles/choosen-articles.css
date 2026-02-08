@@ -66,9 +66,6 @@ section.chosen-section {
 .post-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #ff8a00; /* Already orange, maybe user wants it to START white? Title in screenshot is orange. User said "change from white to orange". */
-  /* If currently orange, I should check if I should make it white by default. */
-  /* Wait, user said "change ... from white to orange". Currently .post-title is #ff8a00. */
   color: #ffffff;
   transition: color 0.3s ease;
 }
@@ -143,7 +140,6 @@ section.chosen-section {
   font-weight: 500;
   color: #f97316;
 }
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 8px;
   aspect-ratio: 1;

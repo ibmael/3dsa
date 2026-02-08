@@ -10,3 +10,22 @@ body {
     sans-serif;
   padding-top: 80px; /* Offset for fixed-top navbar */
 }
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 22px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f12;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 6px;
+  border: 3px solid #0f0f12;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e06b00;
+}
