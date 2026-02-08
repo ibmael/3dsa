@@ -15,7 +15,7 @@
 
 ### 🏗️ Core Architecture
 
-- **Framework**: Built with **Angular v18+** using **Standalone Components**.
+- **Framework**: Built with **Angular v20** using **Standalone Components**.
 - **State Management**: Powered by **Angular Signals** for reactive and efficient data handling.
 - **Routing**: Optimized with **Lazy Loading**, **View Transitions**, and **Scroll Restoration**.
 
