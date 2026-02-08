@@ -7,7 +7,7 @@
 
 > **"حيث يبدأ الإبداع"** - _Where Creativity Begins_
 
-**Adasa** is a modern, responsive Angular application designed for photography enthusiasts. It features a premium dark-themed UI, RTL support for Arabic content, and a seamless user experience powered by the latest Angular technologies.
+**Adasa** is a modern, responsive Angular photography app with Standalone Components, Signals for reactive state, lazy-loaded routes with smooth transitions, RTL and dark mode support, Bootstrap 5 styling, real-time blog search and pagination, dynamic content, SEO-friendly routes, and mobile-first responsive design.
 
 ---
 
