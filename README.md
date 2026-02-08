@@ -60,7 +60,7 @@
 1.  **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/3dsa.git
+    git clone https://github.com/ibmael/3dsa.git
     cd 3dsa
     ```
 
@@ -77,7 +77,7 @@
     ```
 
 4.  **Open in browser**:
-    Navigate to `http://localhost:4200/`.
+    Navigate to `not published yet!!!`.
 
 ---
 
@@ -102,10 +102,7 @@ src/
 
 ## ❤️ Credits
 
-Developed with passion by **[Your Name]**.
-
-- **Images**: Unsplash
-- **Icons**: FontAwesome
+Developed with passion by **[IBRAHIM MAHMOUD ELGHANDOUR]**.
 
 ---
 
