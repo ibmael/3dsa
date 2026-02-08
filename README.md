@@ -1,59 +1,112 @@
-# 3dsa
+# 📸 Adasa (عدسة) | A Journey in Photography World
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![FontAwesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-## Development server
+> **"حيث يبدأ الإبداع"** - _Where Creativity Begins_
 
-To start a local development server, run:
+**Adasa** is a modern, responsive Angular application designed for photography enthusiasts. It features a premium dark-themed UI, RTL support for Arabic content, and a seamless user experience powered by the latest Angular technologies.
 
-```bash
-ng serve
+---
+
+## ✨ Key Features
+
+### 🏗️ Core Architecture
+
+- **Framework**: Built with **Angular v18+** using **Standalone Components**.
+- **State Management**: Powered by **Angular Signals** for reactive and efficient data handling.
+- **Routing**: Optimized with **Lazy Loading**, **View Transitions**, and **Scroll Restoration**.
+
+### 🎨 UI & UX Design
+
+- **Premium Dark Theme**: A sleek, dark interface with vibrant `#ff7a00` orange accents.
+- **RTL Support**: Fully optimized for Arabic content direction.
+- **Responsive Layout**: Mobile-first design using **Bootstrap 5** grid system.
+- **Custom Scrollbar**: Styled orange scrollbar for a unique look.
+- **Font Integration**: Uses **Tajawal** and **Cairo** fonts for beautiful Arabic typography.
+
+### 🚀 Functionality
+
+- **Dynamic Blog**: Filter articles by category with real-time updates using Signals.
+- **Pagination**: Client-side pagination for browsing articles.
+- **Interactive Forms**: Styled subscribe and contact forms.
+- **404 Page**: Custom-designed "Not Found" page with creative visuals.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology      | Usage                                           |
+| :-------------- | :---------------------------------------------- |
+| **Angular**     | Frontend Framework (Signals, Control Flow, SSR) |
+| **Bootstrap 5** | Responsive Grid & Utility Classes               |
+| **FontAwesome** | Vector Icons                                    |
+| **TypeScript**  | Type-safe Logic                                 |
+| **CSS3**        | Custom Styling & Animations                     |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Angular CLI](https://angular.dev/tools/cli)
+
+### Installation
+
+1.  **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/your-username/3dsa.git
+    cd 3dsa
+    ```
+
+2.  **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run development server**:
+
+    ```bash
+    ng serve
+    ```
+
+4.  **Open in browser**:
+    Navigate to `http://localhost:4200/`.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── about-us/    # Team, Hero, Contact sections
+│   │   ├── blog/        # Articles list, filtering, pagination
+│   │   ├── home/        # Hero, Featured Articles, Subscription
+│   │   ├── navbar/      # Responsive Navigation
+│   │   ├── footer/      # Site Footer
+│   │   └── not-found/   # Custom 404 Page
+│   ├── app.routes.ts    # Route definitions & Titles
+│   └── app.config.ts    # Global Config (Providers)
+└── styles.css           # Global Styles & Variables
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ❤️ Credits
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Developed with passion by **[Your Name]**.
 
-```bash
-ng generate component component-name
-```
+- **Images**: Unsplash
+- **Icons**: FontAwesome
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+_© 2026 Adasa. All rights reserved._
