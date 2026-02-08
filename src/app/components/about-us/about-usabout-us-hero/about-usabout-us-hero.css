@@ -1,3 +1,4 @@
+/* --- Hero Section Layout --- */
 .about-hero {
   min-height: 50vh;
   display: flex;
@@ -9,6 +10,7 @@
   background-size: 70px 70px;
 }
 
+/* --- Hero Content --- */
 .about-hero-caption {
   text-align: center;
   color: #e5e7eb;

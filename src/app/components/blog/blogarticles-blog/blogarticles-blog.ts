@@ -40,12 +40,10 @@ export class BlogarticlesBlog {
         (p) =>
           p.title.toLowerCase().includes(query) ||
           p.excerpt.toLowerCase().includes(query) ||
-          p.category.toLowerCase().includes(query)
+          p.category.toLowerCase().includes(query),
       );
     }
-    return posts.sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
+    return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   });
 
   readonly totalPages = computed(() => {
@@ -53,7 +51,6 @@ export class BlogarticlesBlog {
     return Math.max(1, Math.ceil(total / PAGE_SIZE));
   });
 
-  /** Page numbers 1..totalPages for template. RTL order (highest first) for display. */
   readonly pageNumbers = computed(() => {
     const n = this.totalPages();
     return Array.from({ length: n }, (_, i) => n - i);
@@ -70,7 +67,10 @@ export class BlogarticlesBlog {
 
   setPage(page: number): void {
     const max = this.totalPages();
-    if (page >= 1 && page <= max) this.currentPage.set(page);
+    if (page >= 1 && page <= max) {
+      this.currentPage.set(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   setCategory(name: string): void {

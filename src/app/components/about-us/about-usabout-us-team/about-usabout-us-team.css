@@ -1,3 +1,4 @@
+/* --- Section Layout --- */
 .team-section {
   background-color: #050505; /* Deep black background */
   padding: 80px 0;
@@ -5,6 +6,7 @@
   direction: rtl;
 }
 
+/* --- Section Header --- */
 .badge-team {
   background-color: #2c1e12;
   color: #fd7e14;
@@ -27,6 +29,7 @@
   font-size: 1rem;
 }
 
+/* --- Team Member Card --- */
 /* Card Styling */
 .team-card {
   background-color: #111; /* Dark card background */

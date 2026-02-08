@@ -1,20 +1,25 @@
 <div class="page-404">
-  <div>
+  <div class="content-wrapper">
     <h1 class="error-code">404</h1>
 
     <div class="icon-wrapper">
       <i class="fa-regular fa-face-frown"></i>
     </div>
 
-    <p>عفوًا! الصفحة غير موجودة</p>
+    <h2 class="error-title">عفوًا! الصفحة غير موجودة</h2>
+    <p class="error-subtitle">
+      الصفحة التي تبحث عنها غير موجودة أو تم نقلها. دعنا نعيدك إلى المسار الصحيح.
+    </p>
 
-    <button class="btn-home" routerLink="/">
-      <i class="fa-solid fa-house"></i>
-      الذهاب للرئيسية
-    </button>
-    <button class="btn-home" routerLink="/">
-      <i class="fa-solid fa-house"></i>
-      الذهاب للرئيسية
-    </button>
+    <div class="actions">
+      <a class="btn-404 btn-solid" routerLink="/home">
+        <i class="fa-solid fa-house"></i>
+        الذهاب للرئيسية
+      </a>
+      <a class="btn-404 btn-outline" routerLink="/blog">
+        <i class="fa-regular fa-newspaper"></i>
+        تصفح المقالات
+      </a>
+    </div>
   </div>
 </div>

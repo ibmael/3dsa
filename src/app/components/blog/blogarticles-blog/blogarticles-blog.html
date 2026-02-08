@@ -26,7 +26,6 @@
       </div>
     </div>
 
-    <!-- Subheader: count + view toggle -->
     <div class="articles-subheader">
       <span class="articles-count">عرض {{ displayCount() }} مقالات</span>
       <div class="view-toggle">
@@ -53,11 +52,7 @@
       </div>
     </div>
 
-    <!-- Cards grid: 6 per page -->
-    <div
-      class="articles-grid"
-      [class.view-list]="viewMode() === 'list'"
-    >
+    <div class="articles-grid" [class.view-list]="viewMode() === 'list'">
       @for (post of paginatedPosts(); track post.id) {
         <article class="article-card">
           <a [routerLink]="'/blog'" class="article-card-link">
@@ -72,7 +67,7 @@
                   {{ post.readTime }}
                 </span>
                 <span class="article-card-dot">·</span>
-                <span>{{ post.date | date : 'd MMMM yyyy' : undefined : 'ar' }}</span>
+                <span>{{ post.date | date: 'd MMMM yyyy' : undefined : 'ar' }}</span>
               </div>
               <h3 class="article-card-title">{{ post.title }}</h3>
               <p class="article-card-excerpt">{{ post.excerpt }}</p>
@@ -92,7 +87,6 @@
       }
     </div>
 
-    <!-- Pagination -->
     @if (totalPages() > 1) {
       <nav class="pagination-wrap" aria-label="تنقل الصفحات">
         <button

@@ -1,46 +1,62 @@
-.logo {
-  width: 45px;
-  height: 45px;
-  color: #fff;
-  border-radius: 10px;
-  font-weight: bold;
+.bg-nav {
+  background-color: #161616;
+  padding-block: 1rem;
 }
 
 .logo-text {
   font-size: 1.25rem;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.921);
+  line-height: normal;
+  color: #fff;
   font-weight: 700;
 }
 
 .logo-text-small {
   font-size: 0.75rem;
-  line-height: 16px;
-  color: rgba(100%, 53.7%, 1.384%, 0.8);
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
 }
 
-.bg-nav {
-  background-color: #161616;
+.nav-pills-custom {
+  background-color: #1f1f1f; /* Darker bg for the pills container */
+  border: 1px solid #333;
+  border-radius: 50rem;
+  padding: 0.25rem;
+  gap: 0.25rem;
 }
-.bg-btn {
-  background: #ff7a00;
-}
-.f-style {
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 20px;
-}
+
 .nav-link {
+  color: #fff !important;
   font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 20px;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 50rem;
+  transition: all 0.3s ease;
 }
-.actve-link {
-  background-color: rgb(252, 109, 32);
-  border-radius: 1.25rem;
+
+.active-link {
+  background-color: #ff7a00;
+  color: #fff !important;
 }
-.navbar-nav {
-  border: 0.1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.5rem;
+
+.bg-btn {
+  background-color: #ff7a00;
+  border-color: #ff7a00;
+}
+
+.bg-btn:hover {
+  background-color: #e06b00;
+  border-color: #e06b00;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #ff7a00 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

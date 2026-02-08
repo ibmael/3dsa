@@ -18,24 +18,24 @@
 
     <div class="row g-4">
       @for (post of newestPosts; track post.id) {
-      <div class="col-md-6 col-lg-4">
-        <a [routerLink]="['/blog']" class="newest-card">
-          <div class="newest-card-image-wrapper">
-            <img [src]="post.image" [alt]="post.title" class="newest-card-image" />
-            <span class="newest-card-category">{{ post.category }}</span>
-          </div>
-          <div class="newest-card-meta">
-            <span class="d-flex align-items-center gap-1">
-              <i class="fa-solid fa-clock"></i>
-              {{ post.readTime }}
-            </span>
-            <span class="newest-card-dot">·</span>
-            <span>{{ post.date | date : 'd MMMM yyyy' }}</span>
-          </div>
-          <h3 class="newest-card-title">{{ post.title }}</h3>
-          <p class="newest-card-excerpt">{{ post.excerpt }}</p>
-        </a>
-      </div>
+        <div class="col-md-6 col-lg-4">
+          <a [routerLink]="['/blog']" class="newest-card">
+            <div class="newest-card-image-wrapper">
+              <img [src]="post.image" [alt]="post.title" class="newest-card-image" />
+              <span class="newest-card-category">{{ post.category }}</span>
+            </div>
+            <div class="newest-card-meta">
+              <span class="d-flex align-items-center gap-1">
+                <i class="fa-solid fa-clock"></i>
+                {{ post.readTime }}
+              </span>
+              <span class="newest-card-dot">·</span>
+              <span>{{ post.date | date: 'd MMMM yyyy' }}</span>
+            </div>
+            <h3 class="newest-card-title">{{ post.title }}</h3>
+            <p class="newest-card-excerpt">{{ post.excerpt }}</p>
+          </a>
+        </div>
       }
     </div>
   </div>
